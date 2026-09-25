@@ -135,6 +135,7 @@ int main() {
 
 	    IPv4Endpoint endpoint;
 	    if (!findIPv4WithPort(text, endpoint)) {
+			std::cout<<"Invalid input: no valid IPv4 address found\n";
 		    continue;
 	    }
 
@@ -147,6 +148,7 @@ int main() {
         }
 
     }
+	std::cout<<"Program Terminated.\n";
 	return 0;
 }
 

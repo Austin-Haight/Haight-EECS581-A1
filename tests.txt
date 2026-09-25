@@ -1,0 +1,10 @@
+input                                  expected result          success(Y or actual result)
+"connecting to 192.168.1.1 now"        192.168.1.1:none         Y
+"server=10.0.0.255:8080end"            10.0.0.255:8080          Y
+"192a168.1.1.1"                        168.1.1.1:none           Y     
+"192.168.1.1."                         invalid                  Y
+"Connection from 192.168.1.1 refused"  192.168.1.1:none         Y
+"192.168.01.1"                         invalid                  Y
+"1.2.3.4:99999"                        invalid                  Y
+"12.34.56"                             invalid                  Y
+"1.1.1.1:"                             invalid                  Y
